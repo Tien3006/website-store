@@ -1,56 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
-    <title>LOGIN FORM</title>
+    <link rel="stylesheet" href="./style.css" />
+    <title>Products</title>
+  </head>
 
-</head>
-<body>
-        <div class="form">
-            <div class="form__img">
-                <div class="form__text">
-                    <h3>HELLO GUYS, </h3>
-                    <p id="ityped"></p>
-
-                </div>
-                <img src="https://images.foody.vn/res/g74/736401/prof/s576x330/sheis-f06b6e6e-be43-4af9-ad6e-f89566533670-20180426093831978.jpg" alt="">
-                <span></span>
-            </div>
-            <div class="form__login">
-                <div class="logo">
-                    <span>TienZ</span>
-                    <span>X</span>
-                    <span>Foundation for sublimation!</span>
-                </div>
-                <div class="form__login-email">
-                    <label>gmail</label>
-                    <input type="text" placeholder="Enter gmail">
-                </div>
-                <div class="form__login-pass">
-                    <label>pass</label>
-                    <input type="password" placeholder="Enter password">
-                </div>
-                 <div class="form__login-pass">
-                    <label>repass</label>
-                    <input type="password" placeholder="Enter repassword">
-                </div>
-                <div class="form__login-checkbox">
-                    <div class="btn__submit">
-                        <a href="./../loginForm/index.html">REGISTER</a>
-                    </div>
-                </div>
-                </div>
-                 
-            </div>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <span>TienZ</span>
+          <span class="xText">X</span>
         </div>
-</body>
-<script src="https://unpkg.com/ityped@1.0.2"></script>
-<script src="./index.js"></script>
+        <ul class="link">
+          <li class="link-item">
+            <a href="/index.html">HOME</a>
+          </li>
+          <li class="link-item">
+            <a href="./../store/index.html">STORE</a>
+          </li>
+          <li class="link-item">
+            <a href="./../about us/about.html">ABOUT</a>
+          </li>
+          <li class="link-item">
+            <a href="./../Contact/contact.html">CONTACT</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section>
+      <div class="products">
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th class="criptSiton">Products</th>
+              <th class="criptSiton">Price</th>
+              <th class="criptSiton">Description</th>
+              <th class="criptSiton">action</th>
+              <th class="criptSiton">Tổng Tiền</th>
+            </tr>
+          </thead>
+          <tbody class="main"></tbody>
+        </table>
+      </div>
+    </section>
+      <span id="ityped"></span>
+
+    <div class="result">
+      <div class="result__money">
+        <span>Tổng Tiền :</span>
+        <p>0$</p>
+      </div>
+      <button type="button" class="btn">Start Order</button>
+    </div>
+    <div class="show__infor">
+      <div class="show__infor-table">
+        <div class="show__infor-done">
+          <i class="far fa-check-circle"></i><br>
+          <span>DONE !</span>
+        </div>
+        <div class="contact__info-input">
+          <div class="input contact__info-name">
+            <i class="fas fa-file-signature"></i>
+            <label for="name">Name</label>
+            <br />
+            <input id="name" type="text" placeholder="Your name" />
+          </div>
+          <div class="input contact__info-phone">
+            <i class="fas fa-phone"></i>
+            <label for="Phone">Phone</label><br />
+            <input id="Phone" class="input__phone" type="text" placeholder="Your Phone" />
+            <span></span>
+          </div>
+          <div class="input contact__info-add">
+            <i class="fas fa-map-marker-alt"></i>
+            <label for="">Address</label>
+            <br />
+            <input id="Address" type="text" placeholder="Your address" />
+          </div>
+          <div class="contact__btn sent__btn">
+            <button class="btn btn-getTime">
+              Send
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="https://unpkg.com/ityped@1.0.2"></script>
+  <script src="./index.js"></script>
 </html>
